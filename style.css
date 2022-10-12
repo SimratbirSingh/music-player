@@ -162,7 +162,7 @@ a {
 }
 
 p {
-  cursor: progress;
+  cursor: pointer;
 }
 p:hover {
   transform: scale(1.1);
