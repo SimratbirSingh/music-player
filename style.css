@@ -136,13 +136,15 @@ li:hover {
   /* color: #f6f6f6; */
 }
 .musics {
-  height: 30vh;
+  max-height: 30vh;
+  /* max-height: 30vh; */
   width: 20vw;
   margin-right: 5vw;
   background-color: #f6f6f667;
-  padding: 30px;
+  padding: 10px;
   border-radius: 10px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: flex-start;
   font-size: 20px;
@@ -162,7 +164,7 @@ a {
 }
 
 p {
-  cursor: progress;
+  cursor: pointer;
 }
 p:hover {
   transform: scale(1.1);
@@ -172,4 +174,11 @@ p:hover {
 .green {
   color: green;
   font-weight: 700;
+}
+
+.music {
+  padding-left: 20px;
+  width: 100%;
+  display: grid;
+  overflow: auto;
 }
