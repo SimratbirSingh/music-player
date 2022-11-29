@@ -3,6 +3,10 @@ const untouchable = document.getElementById("untouchable");
 const rollin = document.getElementById("rollin");
 const lemonade = document.getElementById("lemonade");
 const days = document.getElementById("days");
+const east = document.getElementById("east");
+const game = document.getElementById("game");
+const speak = document.getElementById("speak");
+const tinted = document.getElementById("tinted");
 
 const music = document.querySelector("audio");
 const img = document.querySelector("img");
@@ -42,6 +46,30 @@ const songs = [
     title: "THESE DAYS",
     artist: "Sidhu Moosewala",
     song: "These Days - Sidhu Moose Wala",
+  },
+  {
+    name: "east",
+    title: "East Side FLow",
+    artist: "Sidhu Moosewala",
+    song: "east",
+  },
+  {
+    name: "game",
+    title: "Game",
+    artist: "Sidhu Moosewala",
+    song: "game",
+  },
+  {
+    name: "speak",
+    title: "speak",
+    artist: "Raja",
+    song: "speak",
+  },
+  {
+    name: "tinted",
+    title: "tinted",
+    artist: "elly managat",
+    song: "tinted",
   },
 ];
 
@@ -132,4 +160,25 @@ $(days).on("click", function () {
   $(document.querySelectorAll(".text")).removeClass("green");
   $(days).addClass("green");
   playSong(5);
+});
+
+$(east).on("click", function () {
+  $(document.querySelectorAll(".text")).removeClass("green");
+  $(east).addClass("green");
+  playSong(6);
+});
+$(game).on("click", function () {
+  $(document.querySelectorAll(".text")).removeClass("green");
+  $(game).addClass("green");
+  playSong(7);
+});
+$(speak).on("click", function () {
+  $(document.querySelectorAll(".text")).removeClass("green");
+  $(speak).addClass("green");
+  playSong(8);
+});
+$(tinted).on("click", function () {
+  $(document.querySelectorAll(".text")).removeClass("green");
+  $(tinted).addClass("green");
+  playSong(9);
 });
